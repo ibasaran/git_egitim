@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Pardus Git Eğitimi</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">PARDUS GIT EĞİTİMİ</a>
+     
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.pardus.org.tr">Pardus</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <h1 class="my-4">Git Komutları</h1>
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+      <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+          <h4 class="card-header">CLONE</h4>
+          <div class="card-body">
+            <p class="card-text">Yerelde veya uzak bir sunucuda yer alan bir deponun çalışan bir kopyasını bulunduğumuz dizine kopyalar.</p>
+            <p>git clone git@github.com:ibasaran/git_egitim.git</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+          <h4 class="card-header">Bir Önceki commiti geri alma</h4>
+          <div class="card-body">
+            <p class="card-text">Bir Önceki commiti geri alma</p>
+            <p>git reset HEAD^ - ( HEAD~1)</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
+        <div class="card h-100">
+          <h4 class="card-header">Bir Önceki commiti düzenleme</h4>
+          <div class="card-body">
+            <p>git commit --amend -m "Yeni mesaj"</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
+        <div class="card h-100">
+          <h4 class="card-header">Branch</h4>
+          <div class="card-body">
+            <p>Yeni branch oluşturma</p>
+            <p>git branch {branch adı }</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
+        <div class="card h-100">
+          <h4 class="card-header">Merge</h4>
+          <div class="card-body">
+            <p>İki branch'i bir birine bağlar</p>
+            <p>Develop branch'ini master branch'e merge etmek için. git checkout master ile msater branch'e geçilir.</p>
+            <p>git merge develop  && git push origin master ile uzak repoya gönderilir.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
+        <div class="card h-100">
+          <h4 class="card-header">Checkout</h4>
+          <div class="card-body">
+            <p>Uzak sunucudaki dosyanın son halini yerele çeker</p>
+            <p>git checkout index.html</p>
+            <p>Branch değiştirir.</p>
+            <p>git checkout {varolan branch ismi}</p>
+            <p>git checkout -b ile olursa branch yoksa yenisini oluşturur.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
+        <div class="card h-100">
+          <h4 class="card-header">Pull</h4>
+          <div class="card-body">
+            <p>Uzak sunucudaki dosyadaki değişiklikleri çeker</p>
+            <p>git pull ( git fectch + git merge ) demektir.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
