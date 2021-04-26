@@ -28,6 +28,9 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
+            <a class="nav-link" href="yeni_proje.html">Yeni Proje</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="https://www.pardus.org.tr">Pardus</a>
           </li>
         </ul>
@@ -103,6 +106,32 @@
 
       <div class="col-lg-6 mb-6" style="margin-top:20px">
         <div class="card h-100">
+          <h4 class="card-header">Bir Önceki COMMIT'i geri alma</h4>
+          <div class="card-body">
+            <p class="card-text">Bir Önceki commiti geri alma</p>
+            <p>git reset HEAD^ - ( HEAD~1)</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
+        <div class="card h-100">
+          <h4 class="card-header">Bir Önceki COMMIT'i düzenleme</h4>
+          <div class="card-body">
+            <p>git commit --amend -m "Yeni mesaj"</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
+        <div class="card h-100">
           <h4 class="card-header">PUSH</h4>
           <div class="card-body">
             <p>Commit kısmında projemizin yerel depomuzdaki HEAD dosyasında saklandığını belirtmiştik. Şimdi ise push komutu ile saklanan projemizi uzak sunucuya göndebiliriz.
@@ -131,37 +160,11 @@
 
       <div class="col-lg-6 mb-6" style="margin-top:20px">
         <div class="card h-100">
-          <h4 class="card-header">Bir Önceki commiti geri alma</h4>
-          <div class="card-body">
-            <p class="card-text">Bir Önceki commiti geri alma</p>
-            <p>git reset HEAD^ - ( HEAD~1)</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-6 mb-6" style="margin-top:20px">
-        <div class="card h-100">
-          <h4 class="card-header">Bir Önceki commiti düzenleme</h4>
-          <div class="card-body">
-            <p>git commit --amend -m "Yeni mesaj"</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-6 mb-6" style="margin-top:20px">
-        <div class="card h-100">
-          <h4 class="card-header">Branch</h4>
+          <h4 class="card-header">BRANCH</h4>
           <div class="card-body">
             <p>Yeni branch oluşturma</p>
             <p>git branch {branch adı }</p>
+            <p>git branch -> yereldeki branch(dal) listeler.</p>
           </div>
           <div class="card-footer">
             <a href="#" class="btn btn-primary">Learn More</a>
@@ -172,7 +175,7 @@
 
       <div class="col-lg-6 mb-6" style="margin-top:20px">
         <div class="card h-100">
-          <h4 class="card-header">Merge</h4>
+          <h4 class="card-header">MERGE</h4>
           <div class="card-body">
             <p>İki branch'i bir birine bağlar</p>
             <p>Develop branch'ini master branch'e merge etmek için. git checkout master ile msater branch'e geçilir.</p>
@@ -186,7 +189,7 @@
 
       <div class="col-lg-6 mb-6" style="margin-top:20px">
         <div class="card h-100">
-          <h4 class="card-header">Checkout</h4>
+          <h4 class="card-header">CHECKOUT</h4>
           <div class="card-body">
             <p>Uzak sunucudaki dosyanın son halini yerele çeker</p>
             <p>git checkout index.html</p>
@@ -199,10 +202,22 @@
           </div>
         </div>
       </div>
-    <!-- /.row -->
 
-
-      
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
+        <div class="card h-100">
+          <h4 class="card-header">LOG</h4>
+          <div class="card-body">
+            <p>Logları inceleme</p>
+            <p>git log  -> logları listeler</p>
+            <p>git log -1  -> son 1 commit logunu gösterir.</p>
+            <p>git log --pretty=oneline   -> logları tek satırda gösterir. ( herbirini )</p>
+            <p>git log --oneline --decorate --graph --all  -> logları grafik olarak gösterir. (all ile bütün branchler görüntülenir)</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
 
     </div>
     <!-- /.row -->
