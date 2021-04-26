@@ -44,7 +44,7 @@
 
     <!-- Marketing Icons Section -->
     <div class="row">
-      <div class="col-lg-6 mb-6">
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
         <div class="card h-100">
           <h4 class="card-header">CLONE</h4>
           <div class="card-body">
@@ -57,7 +57,79 @@
         </div>
       </div>
 
-      <div class="col-lg-6 mb-6">
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
+        <div class="card h-100">
+          <h4 class="card-header">ADD</h4>
+          <div class="card-body">
+            <p>Belirtilen dosyayı ya da tüm projeyi çalışma dizinine (index) gönderir.
+              Başka bir deyişle commit’lemeye hazır hale getirir.
+              </p>
+            <p>git add README.md  -> ile tek dosya eklenebilir.</p>
+            <p>git add --all -> heşeyi ekler.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
+        <div class="card h-100">
+          <h4 class="card-header">RM</h4>
+          <div class="card-body">
+            <p>Belirtilen dosyayı ya da tüm projeyi çalışma dizininden (index) siler.</p>
+            <p>git rm README.md</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
+        <div class="card h-100">
+          <h4 class="card-header">COMMIT</h4>
+          <div class="card-body">
+            <p>Çalışma dizinine eklenen dosyaları HEAD denilen .git klasörü içindeki kısıma ekler. Commit işlemi yerelde gerçekleşen bir işlemdir. Uzak sunucudaki depoda bir değişiklik yapmaz.
+              -m parametresiyle açıklama kısmı olmadan hızlı bir biçimde commit atmamız mümkün.
+              </p>
+            <p>git commit -m “ilk commit”  -> Yerel repositorye commit edilir.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
+        <div class="card h-100">
+          <h4 class="card-header">PUSH</h4>
+          <div class="card-body">
+            <p>Commit kısmında projemizin yerel depomuzdaki HEAD dosyasında saklandığını belirtmiştik. Şimdi ise push komutu ile saklanan projemizi uzak sunucuya göndebiliriz.
+              origin bizim uzak sunucumuzu (remote), master ise uzak sunucudaki ana branch (branch) ’imizi temsil ediyor.               
+              </p>
+            <p>git push origin master</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
+        <div class="card h-100">
+          <h4 class="card-header">PULL</h4>
+          <div class="card-body">
+            <p>Uzak sunucudaki dosyadaki değişiklikleri çeker</p>
+            <p>git pull ( git fectch + git merge ) demektir.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-6" style="margin-top:20px">
         <div class="card h-100">
           <h4 class="card-header">Bir Önceki commiti geri alma</h4>
           <div class="card-body">
@@ -127,6 +199,10 @@
           </div>
         </div>
       </div>
+    <!-- /.row -->
+
+
+      
 
     </div>
     <!-- /.row -->
