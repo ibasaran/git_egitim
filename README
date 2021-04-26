@@ -1,1 +1,121 @@
-Git Eğitimi
+    Pardus Git Eğitimi     
+
+[PARDUS GIT EĞİTİMİ](index.html)
+
+*   [Yeni Proje](yeni_proje.html)
+*   [Pardus](https://www.pardus.org.tr)
+
+Git Komutları
+=============
+
+#### CLONE
+
+Yerelde veya uzak bir sunucuda yer alan bir deponun çalışan bir kopyasını bulunduğumuz dizine kopyalar.
+
+git clone git@github.com:ibasaran/git\_egitim.git
+
+[Learn More](#)
+
+#### ADD
+
+Belirtilen dosyayı ya da tüm projeyi çalışma dizinine (index) gönderir. Başka bir deyişle commit’lemeye hazır hale getirir.
+
+git add README.md -> ile tek dosya eklenebilir.
+
+git add --all -> heşeyi ekler.
+
+[Learn More](#)
+
+#### RM
+
+Belirtilen dosyayı ya da tüm projeyi çalışma dizininden (index) siler.
+
+git rm README.md
+
+[Learn More](#)
+
+#### COMMIT
+
+Çalışma dizinine eklenen dosyaları HEAD denilen .git klasörü içindeki kısıma ekler. Commit işlemi yerelde gerçekleşen bir işlemdir. Uzak sunucudaki depoda bir değişiklik yapmaz. -m parametresiyle açıklama kısmı olmadan hızlı bir biçimde commit atmamız mümkün.
+
+git commit -m “ilk commit” -> Yerel repositorye commit edilir.
+
+[Learn More](#)
+
+#### Bir Önceki COMMIT'i geri alma
+
+Bir Önceki commiti geri alma
+
+git reset HEAD^ - ( HEAD~1)
+
+[Learn More](#)
+
+#### Bir Önceki COMMIT'i düzenleme
+
+git commit --amend -m "Yeni mesaj"
+
+[Learn More](#)
+
+#### PUSH
+
+Commit kısmında projemizin yerel depomuzdaki HEAD dosyasında saklandığını belirtmiştik. Şimdi ise push komutu ile saklanan projemizi uzak sunucuya göndebiliriz. origin bizim uzak sunucumuzu (remote), master ise uzak sunucudaki ana branch (branch) ’imizi temsil ediyor.
+
+git push origin master
+
+[Learn More](#)
+
+#### PULL
+
+Uzak sunucudaki dosyadaki değişiklikleri çeker
+
+git pull ( git fectch + git merge ) demektir.
+
+[Learn More](#)
+
+#### BRANCH
+
+Yeni branch oluşturma
+
+git branch {branch adı }
+
+git branch -> yereldeki branch(dal) listeler.
+
+[Learn More](#)
+
+#### MERGE
+
+İki branch'i bir birine bağlar
+
+Develop branch'ini master branch'e merge etmek için. git checkout master ile msater branch'e geçilir.
+
+git merge develop && git push origin master ile uzak repoya gönderilir.
+
+[Learn More](#)
+
+#### CHECKOUT
+
+Uzak sunucudaki dosyanın son halini yerele çeker
+
+git checkout index.html
+
+Branch değiştirir.
+
+git checkout {varolan branch ismi}
+
+git checkout -b ile olursa branch yoksa yenisini oluşturur.
+
+[Learn More](#)
+
+#### LOG
+
+Logları inceleme
+
+git log -> logları listeler
+
+git log -1 -> son 1 commit logunu gösterir.
+
+git log --pretty=oneline -> logları tek satırda gösterir. ( herbirini )
+
+git log --oneline --decorate --graph --all -> logları grafik olarak gösterir. (all ile bütün branchler görüntülenir)
+
+[Learn More](#)
